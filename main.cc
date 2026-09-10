@@ -1,6 +1,11 @@
 #include <iostream>
 
 
+float Calorias;
+void ConsultarCalorias();
+void QuemarCalorias();
+
+
 struct Usuario {
     std::string nombre;
     int edad;
@@ -31,7 +36,27 @@ int AgregarCalorias(float &calorias, float x) {
     return 0;
 }
 
-int QuemarCalorias(float &calorias, float x) {
-    // Aquí puedes implementar la lógica para agregar calorías
+//paso por valor
+void ConsultarCalorias(float Calorias){
+
+    std::cout<<"Calorias Actuales"<<Calorias<<"\n";
 
 }
+
+//puntero
+void QuemarCalorias( int *Calorias,int Cantidad){
+
+    if (Cantidad<0)
+    {
+        std::cout<<"El total de calorias no debe de ser menor a 0"<<"\n";
+    }
+    
+    if (*Calorias-Cantidad<0)
+    {
+         std::cout<<"El total de calorias no debe de ser menor a 0"<<"\n";
+    }
+    
+    *Calorias -= Cantidad;
+    std::cout<<"El total de Calorias es:"<<Calorias<<"\n";
+}
+
