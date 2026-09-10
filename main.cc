@@ -13,20 +13,20 @@ struct Usuario {
 };
 
 
-int AgregarCalorias(float &calorias, float x) {
-    // Aquí puedes implementar la lógica para agregar calorías
+int AgregarCalorias(float &calorias, float x); 
 
-}
-
-int QuemarCalorias(float &calorias, float x) {
-    // Aquí puedes implementar la lógica para agregar calorías
-
-}
 
 
 int main() {
-    
+    int totalCalorias=2000;
 
+    
+    std::cout << "Bienvenido estas son sus calorias: "<<std::endl;
+    void ConsultarCalorias( float totalCalorias);
+
+    int AgregarCalorias(float &calorias, float x);
+
+    void QuemarCalorias(float &calorias, float x);
 
     return 0;
 }
